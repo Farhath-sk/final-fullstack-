@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <script src="https://kit.fontawesome.com/60c4e35d75.js" crossorigin="anonymous"></script>
+    <style>*{
+      padding: 1px;
+      margin: 1px;
+       
+  }
+  .navbar{
+      background-color:transparent;
+      width: 100%;
+      height: 35pxs;
+      display: flex;
+      justify-content: space-around;
+      border-style: solid;
+      border-width: 1px;
+      margin-bottom: 10px;
+      border-radius: 20px;
+  }
+  #icon{
+      padding-top: 20px;
+      margin-left: 20px;
+      width: 110px;
+      height: 110px;
+      margin-top: -20px;
+  }
+  a{
+      font-size: 15px;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 15px;
+      padding-top: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .opt:hover{
+      background-color: lightpink;
+  }
+  ul{
+      padding-top: 30px;
+  }
+  ul li a{
+      
+      display: inline;
+  }
+  li{
+      display: inline;
+  }
+ 
+  #search{
+      font-size: 17px;
+      border-style: solid;
+      border-radius: 30px;
+      box-shadow: 2px;
+      width: 400px;
+      height: 30px;
+      text-align: center;
+  }
+  .cart{
+      justify-content: space-around;
+      width: 250px;
+      display: flex;
+  }
+  #srh{
+      background-color: transparent;
+      font-size: 15px;
+  }
+  #search:hover{
+      background-color: lightpink;
+  }
+  i{
+      font-size: 25px;
+      padding-top: 30px;
+      width: auto;
+      height: 10px;
+  }
+  .half{
+      width: 100%;
+      height: 600px;
+      background: radial-gradient(white,rgb(19, 224, 224));
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-around;
+  }
+  #leftimage{
+      float: left;
+      width: 500px;
+      height: 600px;
+  }
+  #rightimage{
+      
+      float:right;
+      width: 550px;
+      margin-top: 47px;
+      height: 550px;
+  }
+  #male{
+      font-size: large;
+      font-weight: bold;
+      background-color: bisque;
+      float: left;
+      width: 110px;
+      height: 40px;
+      margin-top: 550px;
+      margin-left: -300px;
+      color: black;
+  }
+  .dis{
+      font-size: 30px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      width: 300px;
+      padding-top: 200px;
+      text-align: center;
+      justify-items: center;
+  }
+  #female{
+      font-size: 15px;
+      font-weight: bold;
+      background-color: bisque;
+      float: right;
+      width: 110px;
+      height: 40px;
+      margin-top: 550px;
+      margin-right: -350px;
+      color: black;
+      transform: translate(-50%);
+  }
+  #female:hover{
+      background: radial-gradient(white,rgb(201, 231, 6));
+  }
+  #male:hover{
+      background: radial-gradient(white,rgb(224, 220, 19));
+  }
+  .mensware{
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+  }
+  .items{
+      width:250px;
+      height: 330px;
+      border-style: solid;
+      border-width: 1px;
+      padding-left: 25px;
+      border-radius: 10px;
+      transform: 1s;
+      margin: 50px;
+      transition: 0.1s 0.3s;
+      position: sticky;
+  }
+  .items:hover{
+      width: 255px;
+      height: 335px;
+      box-shadow: 2px 2px 3px 3px #565151;
+  }
+  .item-imgs{
+        padding-left: 25px;
+        width: 180px;
+        height: 200px;
+        border-radius: 10px;
+  }
+  .item-imgs-price{
+      text-align: center;
+      font-size: 20PX;
+  }
+  .fa-regular{
+      font-size: small;
+      padding-top: -30px;
+      padding-left: 4px;
+      margin-left: 30px;    
+  }
+  .brand{
+      text-align: center;
+      font-size: 15px;
+  }
+  legend{
+      text-align: center;
+      font-size: 45px;
+      margin: 20px;
+      color: rgb(224, 19, 19)
+  }
+  fieldset{
+      border-style: solid;
+      border-width: 5px;
+      margin-top: 100px;
+      border-radius: 10px;
+      border-color: rgb(225, 99, 50)  #f004e4 #18bed3 #d404f0 ;
+  }
+  button{
+      border-radius: 5px;
+      font-size: 15px;
+      color: aliceblue;
+      background-color: green;
+      justify-content: space-around;
+      height: 25px;
+      width: 100px;
+  }
+  button:hover{
+      background: radial-gradient(white,rgb(242, 255, 0));
+      color: black;
+      font-size: 10px;
+  }
+  .offer1{
+      margin-top: 70px;
+      margin-bottom: -40px;
+      height: 400px;
+      width: 500px;
+      background: radial-gradient(rgb(230, 222, 108),rgb(19, 224, 77));
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-around;
+      
+      transition: 0.1s 0.5s;
+  }
+  .offer{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      height: auto;
+  }
+  .offer1:hover{
+      width:510px;
+      height:410px ;
+      box-shadow: 5px 5px 5px 5px rgb(111, 95, 95);
+  }
+  #shoues{
+      width: 400px;
+      height: 250px;
+      filter: blur(1px);
+  }
+  #watchi{
+      padding-top: 30px;
+      padding-left: 60px;
+      height: 250px ;
+      filter: blur(1px);
+  }
+  #nike{
+      position:sticky;
+      padding-top: 230px;
+      font-size: 38px;
+  }
+  #watch{
+      position:sticky;
+      padding-top: 230px;
+      font-size: 38px; 
+  }
+  .row-1{
+      background:rgba(246, 246, 191, 0.818);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around;   
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 10px;
+  }
+  .footer-col-1{
+      max-width:30%;
+      text-align: center;
+  }
+  .footer-col-1 h3{
+      font-size: 30px;
+      padding-bottom: 10px;
+  }
+  .footer-col-1 p{
+      font-size: 15px;
+      padding-bottom: 20px;
+  }
+  .app{
+      margin-bottom: 13px;
+      width: 150px;
+      height:50px ;
+      border-radius: 5px;
+  }
+  .footer-col-2{
+      text-align: center;
+      max-width: 30%;
+  }
+  .footer-col-2 img{
+      width: 70px;
+      border-radius: 50%;
+      padding-bottom: 10px;
+  }
+  .footer-col-3 img{
+      width:18px;
+      border-radius: 50%;
+  }
+  .footer-col-3 ul{
+      font-size:20px;
+      font-weight: bold;
+      padding-bottom: 5px;
+  }
+  .footer-col-3 li{
+      padding-top: 5px;
+      list-style-type: none;
+  }
+  .footer-col-3 a{
+      text-decoration: none;
+      color: black;
+  }
+  .copy{
+      background:rgba(246, 246, 191, 0.818);
+      margin-top: 0px;
+      padding-top: 0px;
+  }
+  .footer hr{
+      border: none    
+  }
+  .footer p{
+      text-align: center;
+      padding: 10px;
+  }</style>
+</head>
+<body>
+    <nav class="navbar">
+            <div class="navleft">
+                <img id="icon" src="https://img.freepik.com/premium-vector/h-letter-logo-design_579179-1043.jpg?w=2000" alt="">
+            </div> 
+            <div class="options">
+                <ul>
+                    <a class="opt" href="#"><li>MENS</li></a>
+                    <a class="opt" href="#"><li>WOMENS</li></a>
+                    <a class="opt" href="#"><li>KIDS</li></a>
+                    <a class="opt" href="#"><li>BEAUTY</li></a>
+                    <a class="opt" href="#"><li>HOME & LIVING</li></a>
+                </ul>
+            </div>
+            <div class="search">
+                <i id="srh" class="fa-solid fa-magnifying-glass"></i>    
+                <input id="search" type="search" placeholder="SEARCH">
+            </div>
+           <div class="cart">   
+           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>    
+            <a href="#"><i class="fa-solid fa-user-plus"></i></a>
+           </div>
+    </nav>
+           <div class="half">
+                    <div class="imageleft">
+                        <a href="#"><img id="leftimage" src="https://www.pngall.com/wp-content/uploads/5/Cool-Model-Man.png" alt=""></a>
+                        <button id="male" type="submit">FOR MENS</button>
+                    </div>
+                       <div class="dis">
+                           <h1>FLAT 50% OFF</h1>
+                           <p>BIGGEST SALE IN THE YEAR</p>
+                       </div>
+                    <div class="imageleft">
+                        <a href="#"><img id="rightimage" src="https://www.pngall.com/wp-content/uploads/8/Fashionable-Women-PNG.png" alt=""></a>
+                        <button id="female" type="submit">FOR WOMENS</button>
+                    </div>
+               
+            </div>
+            <fieldset>
+                <legend>MENS WARE</legend>
+            <div class="mensware">
+                
+                 <div class="items">
+                      <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/l3ys70w0/t-shirt/j/4/o/m-t229-nblm-sr-eyebogler-original-imageyzgqdgqh5dz.jpeg?q=70" alt="">
+                       <p class="brand">
+                        Men Striped Round Neck</p>
+                      <p class="item-imgs-price">₹259/-</p>
+                      <button type="submit">BUY</button>
+                      <button type="submit">Add to cart</button>
+                 </div>
+                 <div class="items">
+                    <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/xif0q/jacket/x/w/s/m-1-no-gt6358-adidas-original-imaga4hmmjuyhrh8-bb.jpeg?q=70" alt="">
+                     <p class="brand">
+                        ADIDAS
+                        Men Solid Sports Jacket</p>
+                    <p class="item-imgs-price">₹4,239/-</p>
+                    <button type="submit">BUY</button>
+                    <button type="submit">Add to cart</button>
+                </div>
+                <div class="items">
+                    <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/kl5hh8w0/jacket/e/8/y/40-vastraavs123-vastraa-fusion-original-imagyc8rctd6gw7x.jpeg?q=70" alt="">
+                     <p class="brand">
+                        Vastraa Fusion
+                        Men Solid Nehru Jacket</p>
+                    <p class="item-imgs-price">₹999/-</p>
+                    <button type="submit">BUY</button>
+                    <button type="submit">Add to cart</button>
+                </div>
+                <div class="items">
+                    <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/ktrk13k0/shirt/s/u/y/s-250796402-jack-jones-original-imag7f7qz6rnnuby.jpeg?q=70" alt="">
+                     <p class="brand">
+                        JACK & JONES
+                        Men Slim Fit Solid Casual</p>
+                    <p class="item-imgs-price">₹1,035/-</p>
+                    <button type="submit">BUY</button>
+                    <button type="submit">Add to cart</button>
+               </div>
+               <div class="items">
+                <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/p/k/9/-original-imaggdgbycfgt4zn.jpeg?q=70" alt="">
+                 <p class="brand">
+                    JACK & JONES
+                    Men Regular Fit Checkered</p>
+                <p class="item-imgs-price">₹1,095/-</p>
+                <button type="submit">BUY</button>
+                <button type="submit">Add to cart</button>
+              </div>
+              <div class="items">
+                <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/p/d/a/s-248496501-jack-jones-original-imagjzzhpnc5h3uc.jpeg?q=70" alt="">
+                 <p class="brand">
+                    JACK & JONES
+                    Men Regular Fit Checkered Spread</p>
+                <p class="item-imgs-price">₹1,349/-</p>
+                <button type="submit">BUY</button>
+                <button type="submit">Add to cart</button>
+              </div>
+              <div class="items">
+                <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/g/d/y/m-238478909-jack-jones-original-imaghbxhfqzbqqv3.jpeg?q=70" alt="">
+                 <p class="brand">
+                    JACK & JONES
+                    Men Solid Round Neck</p>
+                <p class="item-imgs-price">₹349/-</p>
+                <button type="submit">BUY</button>
+                <button type="submit">Add to cart</button>
+              </div>
+              <div class="items">
+                <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/n/y/e/m-usshto0972-u-s-polo-association-original-imaggrb5wqg6ndvb.jpeg?q=70" alt="">
+                 <p class="brand">
+                  U.S. POLO ASSN.
+                  Men Regular Fit </p>
+                <p class="item-imgs-price">₹1,169/-</p>
+                <button type="submit">BUY</button>
+                <button type="submit">Add to cart</button>
+              </div>
+                
+
+            </fieldset>
+            <div class="offer">
+                <div class="offer1">
+                     <img id="shoues" src="https://www.freepnglogos.com/uploads/shoes-png/shoes-wasatch-running-3.png" alt="">
+                     <p id="nike">NIKE BRAND 45% off</p>
+                </div>
+                <div class="offer1">
+                   <img id="watchi" src="https://www.freepnglogos.com/uploads/rolex-png-logo/rolex-daytona-watch-vector-png-logo-20.png" alt="">
+                   <p id="watch">60% OFF on ROLEX watchs</p>
+                </div>
+            </div>
+            <fieldset>
+                <legend>WOMENS WARE</legend>
+            <div class="mensware">
+                
+                <div class="items">
+                    <img class="item-imgs" src="https://m.media-amazon.com/images/I/71KkDxDnDaL._AC_UY1100_.jpg" alt="">
+                     <p class="brand">
+                        Anara Silk Embroidery Green Lehenga Choli</p>
+                    <p class="item-imgs-price">₹2500/-</p>
+                    <button type="submit">BUY</button>
+                    <button type="submit">Add to cart</button>
+               </div>
+               <div class="items">
+                  <img class="item-imgs" src="https://5.imimg.com/data5/LE/GV/KB/ANDROID-78013967/product-jpeg-500x500.jpg" alt="">
+                   <p class="brand">
+                    Women Chiffon Long Dress</p>
+                  <p class="item-imgs-price">₹3500/-</p>
+                  <button type="submit">BUY</button>
+                  <button type="submit">Add to cart</button>
+              </div>
+              <div class="items">
+                  <img class="item-imgs" src="https://www.kreeva.com/blog/wp-content/uploads/2022/08/Indian-Outfits-For-Women-min.jpg" alt="">
+                   <p class="brand">
+                    Women Chiffon Long Dress</p>
+                  <p class="item-imgs-price">₹500/-</p>
+                  <button type="submit">BUY</button>
+                  <button type="submit">Add to cart</button>
+              </div>
+              <div class="items">
+                  <img class="item-imgs" src="https://www.shauryasanadhya.com/cdn/shop/articles/one.jpg?v=1577337592" alt="">
+                   <p class="brand">
+                    Ethnic Essentials for Every Girl Label Shaurya Sanadhya</p>
+                  <p class="item-imgs-price">₹2000/-</p>
+                  <button type="submit">BUY</button>
+                  <button type="submit">Add to cart</button>
+             </div>
+             <div class="items">
+              <img class="item-imgs" src="https://cdn.shopify.com/s/files/1/0707/9565/7501/products/MC-27-B.jpg" alt="">
+               <p class="brand">
+                Traditional wear saree</p>
+              <p class="item-imgs-price">₹3500/-</p>
+              <button type="submit">BUY</button>
+              <button type="submit">Add to cart</button>
+            </div>
+            <div class="items">
+              <img class="item-imgs" src="https://image-marketing.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/02/22232506/6.-Half-Saree-as-an-Engagement-Dress-For-Women.jpg" alt="">
+               <p class="brand">
+               Engagement dress</p>
+              <p class="item-imgs-price">₹4500/-</p>
+              <button type="submit">BUY</button>
+              <button type="submit">Add to cart</button>
+            </div>
+            <div class="items">
+              <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/l3ys70w0/t-shirt/j/4/o/m-t229-nblm-sr-eyebogler-original-imageyzgqdgqh5dz.jpeg?q=70" alt="">
+               <p class="brand">
+                Men Striped Round Neck</p>
+              <p class="item-imgs-price">₹500/-</p>
+              <button type="submit">BUY</button>
+              <button type="submit">Add to cart</button>
+            </div>
+            <div class="items">
+              <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/l3ys70w0/t-shirt/j/4/o/m-t229-nblm-sr-eyebogler-original-imageyzgqdgqh5dz.jpeg?q=70" alt="">
+               <p class="brand">
+                Men Striped Round Neck</p>
+              <p class="item-imgs-price">₹500/-</p>
+              <button type="submit">BUY</button>
+              <button type="submit">Add to cart</button>
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend>KIDS WARE</legend>
+                <div class="mensware">
+                
+                    <div class="items">
+                         <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/l3ys70w0/t-shirt/j/4/o/m-t229-nblm-sr-eyebogler-original-imageyzgqdgqh5dz.jpeg?q=70" alt="">
+                          <p class="brand">
+                           Men Striped Round Neck</p>
+                         <p class="item-imgs-price">₹500/-</p>
+                         <button type="submit">BUY</button>
+                         <button type="submit">Add to cart</button>
+                    </div>
+                    <div class="items">
+                       <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/l3ys70w0/t-shirt/j/4/o/m-t229-nblm-sr-eyebogler-original-imageyzgqdgqh5dz.jpeg?q=70" alt="">
+                        <p class="brand">
+                         Men Striped Round Neck</p>
+                       <p class="item-imgs-price">₹500/-</p>
+                       <button type="submit">BUY</button>
+                       <button type="submit">Add to cart</button>
+                   </div>
+                   <div class="items">
+                       <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/l3ys70w0/t-shirt/j/4/o/m-t229-nblm-sr-eyebogler-original-imageyzgqdgqh5dz.jpeg?q=70" alt="">
+                        <p class="brand">
+                         Men Striped Round Neck</p>
+                       <p class="item-imgs-price">₹500/-</p>
+                       <button type="submit">BUY</button>
+                       <button type="submit">Add to cart</button>
+                   </div>
+                   <div class="items">
+                       <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/l3ys70w0/t-shirt/j/4/o/m-t229-nblm-sr-eyebogler-original-imageyzgqdgqh5dz.jpeg?q=70" alt="">
+                        <p class="brand">
+                         Men Striped Round Neck</p>
+                       <p class="item-imgs-price">₹500/-</p>
+                       <button type="submit">BUY</button>
+                       <button type="submit">Add to cart</button>
+                  </div>
+                  <div class="items">
+                   <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/l3ys70w0/t-shirt/j/4/o/m-t229-nblm-sr-eyebogler-original-imageyzgqdgqh5dz.jpeg?q=70" alt="">
+                    <p class="brand">
+                     Men Striped Round Neck</p>
+                   <p class="item-imgs-price">₹500/-</p>
+                   <button type="submit">BUY</button>
+                   <button type="submit">Add to cart</button>
+                 </div>
+                 <div class="items">
+                   <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/l3ys70w0/t-shirt/j/4/o/m-t229-nblm-sr-eyebogler-original-imageyzgqdgqh5dz.jpeg?q=70" alt="">
+                    <p class="brand">
+                     Men Striped Round Neck</p>
+                   <p class="item-imgs-price">₹500/-</p>
+                   <button type="submit">BUY</button>
+                   <button type="submit">Add to cart</button>
+                 </div>
+                 <div class="items">
+                   <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/l3ys70w0/t-shirt/j/4/o/m-t229-nblm-sr-eyebogler-original-imageyzgqdgqh5dz.jpeg?q=70" alt="">
+                    <p class="brand">
+                     Men Striped Round Neck</p>
+                   <p class="item-imgs-price">₹500/-</p>
+                   <button type="submit">BUY</button>
+                   <button type="submit">Add to cart</button>
+                 </div>
+                 <div class="items">
+                   <img class="item-imgs" src="https://rukminim1.flixcart.com/image/612/612/l3ys70w0/t-shirt/j/4/o/m-t229-nblm-sr-eyebogler-original-imageyzgqdgqh5dz.jpeg?q=70" alt="">
+                    <p class="brand">
+                     Men Striped Round Neck</p>
+                   <p class="item-imgs-price">₹500/-</p>
+                   <button type="submit">BUY</button>
+                   <button type="submit">Add to cart</button>
+                 </div>
+
+            </fieldset>
+        </div>
+            </div>
+            <div class="footer">
+    <div class="container">
+        <div class="row-1">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="https://play.google.com" target="
+                "><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="" class="app"></a>
+                <a href="https://apps.apple.com" target="
+                "><img src="data:image/png;base64,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" alt="" class="app"></a> 
+            </div>
+
+            <div class="footer-col-2">
+                <img src="images/logo.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, aperiam?</p>
+            </div>
+            <div class="footer-col-3">
+                <ul>Useful links</ul>
+                <li><a href="https://facebook.com" target="_
+                "><img src="images/fb.webp" alt=""> Facebook</a></li>
+                <li><a href="https://instagram.com" target="_
+                "><img src="images/insta.webp" alt=""> Instagram</a></li>
+                <li><a href="https://twitter.com" target="_
+                "><img src="images/twitter.png" alt=""> Twitter</a></li>
+                <li><a href="https://youtube.com" target="_
+                "><img src="images/yt.jpg" alt=""> Youtube</a></li>
+            </div>
+            
+        </div>
+        <div class="copy">
+            <hr>
+            <p class="copyright">Copyright 2023 - we5</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
